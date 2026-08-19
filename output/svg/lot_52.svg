@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 130.26 119.43" font-family="Arial, sans-serif">
+<rect x="0" y="0" width="130.26" height="119.43" fill="#ffffff"/>
+<polygon points="37.15,20.18 110.08,68.07 97.48,99.25 58.56,75.54 20.18,46.22" fill="#eaf4ea" stroke="#1b6e1b" stroke-width="0.521" stroke-linejoin="round"/>
+<circle cx="37.15" cy="20.18" r="0.834" fill="#1b6e1b"/>
+<circle cx="110.08" cy="68.07" r="0.834" fill="#1b6e1b"/>
+<circle cx="97.48" cy="99.25" r="0.834" fill="#1b6e1b"/>
+<circle cx="58.56" cy="75.54" r="0.834" fill="#1b6e1b"/>
+<circle cx="20.18" cy="46.22" r="0.834" fill="#1b6e1b"/>
+<text x="73.61" y="44.13" font-size="3.00" fill="#b00020" text-anchor="middle" dominant-baseline="middle">87.25 m</text>
+<text x="103.78" y="83.66" font-size="3.00" fill="#b00020" text-anchor="middle" dominant-baseline="middle">33.62 m</text>
+<text x="78.02" y="87.40" font-size="3.00" fill="#b00020" text-anchor="middle" dominant-baseline="middle">45.58 m</text>
+<text x="39.37" y="60.88" font-size="3.00" fill="#b00020" text-anchor="middle" dominant-baseline="middle">48.30 m</text>
+<text x="28.66" y="33.20" font-size="3.00" fill="#b00020" text-anchor="middle" dominant-baseline="middle">31.07 m</text>
+<text x="64.69" y="60.60" font-size="4.17" fill="#0d3b0d" text-anchor="middle" font-weight="bold">LOT 52</text>
+<text x="64.69" y="65.60" font-size="3.00" fill="#333" text-anchor="middle">3010.4 m² (30.10 sotix)</text>
+<line x1="120.17" y1="29.26" x2="120.17" y2="18.16" stroke="#333" stroke-width="0.521"/>
+<polygon points="120.17,16.50 118.17,19.49 122.16,19.49" fill="#333"/>
+<text x="120.17" y="14.28" font-size="3.00" fill="#333" text-anchor="middle">N</text>
+<line x1="12.11" y1="109.34" x2="32.11" y2="109.34" stroke="#333" stroke-width="0.729"/>
+<line x1="12.11" y1="108.14" x2="12.11" y2="110.54" stroke="#333" stroke-width="0.729"/>
+<line x1="32.11" y1="108.14" x2="32.11" y2="110.54" stroke="#333" stroke-width="0.729"/>
+<text x="12.11" y="107.54" font-size="3.00" fill="#333">20 m</text>
+</svg>

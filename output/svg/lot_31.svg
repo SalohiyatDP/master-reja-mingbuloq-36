@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 104.15 130.33" font-family="Arial, sans-serif">
+<rect x="0" y="0" width="104.15" height="130.33" fill="#ffffff"/>
+<polygon points="20.19,31.28 50.81,20.19 51.20,21.08 83.96,96.30 52.80,110.14" fill="#eaf4ea" stroke="#1b6e1b" stroke-width="0.521" stroke-linejoin="round"/>
+<circle cx="20.19" cy="31.28" r="0.834" fill="#1b6e1b"/>
+<circle cx="50.81" cy="20.19" r="0.834" fill="#1b6e1b"/>
+<circle cx="51.20" cy="21.08" r="0.834" fill="#1b6e1b"/>
+<circle cx="83.96" cy="96.30" r="0.834" fill="#1b6e1b"/>
+<circle cx="52.80" cy="110.14" r="0.834" fill="#1b6e1b"/>
+<text x="35.50" y="25.74" font-size="3.00" fill="#b00020" text-anchor="middle" dominant-baseline="middle">32.57 m</text>
+<text x="51.00" y="20.63" font-size="3.00" fill="#b00020" text-anchor="middle" dominant-baseline="middle">0.97 m</text>
+<text x="67.58" y="58.69" font-size="3.00" fill="#b00020" text-anchor="middle" dominant-baseline="middle">82.05 m</text>
+<text x="68.38" y="103.22" font-size="3.00" fill="#b00020" text-anchor="middle" dominant-baseline="middle">34.09 m</text>
+<text x="36.50" y="70.71" font-size="3.00" fill="#b00020" text-anchor="middle" dominant-baseline="middle">85.33 m</text>
+<text x="51.79" y="54.55" font-size="4.17" fill="#0d3b0d" text-anchor="middle" font-weight="bold">LOT 31</text>
+<text x="51.79" y="59.55" font-size="3.00" fill="#333" text-anchor="middle">2803.2 m² (28.03 sotix)</text>
+<line x1="94.06" y1="29.28" x2="94.06" y2="18.17" stroke="#333" stroke-width="0.521"/>
+<polygon points="94.06,16.51 92.06,19.50 96.05,19.50" fill="#333"/>
+<text x="94.06" y="14.29" font-size="3.00" fill="#333" text-anchor="middle">N</text>
+<line x1="12.11" y1="120.24" x2="32.11" y2="120.24" stroke="#333" stroke-width="0.730"/>
+<line x1="12.11" y1="119.03" x2="12.11" y2="121.44" stroke="#333" stroke-width="0.730"/>
+<line x1="32.11" y1="119.03" x2="32.11" y2="121.44" stroke="#333" stroke-width="0.730"/>
+<text x="12.11" y="118.43" font-size="3.00" fill="#333">20 m</text>
+</svg>

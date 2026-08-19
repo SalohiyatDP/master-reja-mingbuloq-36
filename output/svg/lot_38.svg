@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 83.35 105.28" font-family="Arial, sans-serif">
+<rect x="0" y="0" width="83.35" height="105.28" fill="#ffffff"/>
+<polygon points="16.88,25.06 46.32,16.88 66.47,73.34 36.76,88.40" fill="#eaf4ea" stroke="#1b6e1b" stroke-width="0.421" stroke-linejoin="round"/>
+<circle cx="16.88" cy="25.06" r="0.674" fill="#1b6e1b"/>
+<circle cx="46.32" cy="16.88" r="0.674" fill="#1b6e1b"/>
+<circle cx="66.47" cy="73.34" r="0.674" fill="#1b6e1b"/>
+<circle cx="36.76" cy="88.40" r="0.674" fill="#1b6e1b"/>
+<text x="31.60" y="20.97" font-size="2.43" fill="#b00020" text-anchor="middle" dominant-baseline="middle">30.56 m</text>
+<text x="56.40" y="45.11" font-size="2.43" fill="#b00020" text-anchor="middle" dominant-baseline="middle">59.96 m</text>
+<text x="51.62" y="80.87" font-size="2.43" fill="#b00020" text-anchor="middle" dominant-baseline="middle">33.31 m</text>
+<text x="26.82" y="56.73" font-size="2.43" fill="#b00020" text-anchor="middle" dominant-baseline="middle">66.39 m</text>
+<text x="41.61" y="49.91" font-size="3.37" fill="#0d3b0d" text-anchor="middle" font-weight="bold">LOT 38</text>
+<text x="41.61" y="53.95" font-size="2.43" fill="#333" text-anchor="middle">2004.6 m² (20.05 sotix)</text>
+<line x1="74.91" y1="24.47" x2="74.91" y2="15.19" stroke="#333" stroke-width="0.421"/>
+<polygon points="74.91,13.80 73.24,16.30 76.58,16.30" fill="#333"/>
+<text x="74.91" y="11.94" font-size="2.43" fill="#333" text-anchor="middle">N</text>
+<line x1="10.13" y1="96.84" x2="20.13" y2="96.84" stroke="#333" stroke-width="0.590"/>
+<line x1="10.13" y1="95.87" x2="10.13" y2="97.81" stroke="#333" stroke-width="0.590"/>
+<line x1="20.13" y1="95.87" x2="20.13" y2="97.81" stroke="#333" stroke-width="0.590"/>
+<text x="10.13" y="95.38" font-size="2.43" fill="#333">10 m</text>
+</svg>
