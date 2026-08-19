@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 136.84 121.59" font-family="Arial, sans-serif">
+<rect x="0" y="0" width="136.84" height="121.59" fill="#ffffff"/>
+<polygon points="21.05,44.78 41.22,21.05 92.39,57.02 115.79,74.34 80.82,100.53" fill="#eaf4ea" stroke="#1b6e1b" stroke-width="0.547" stroke-linejoin="round"/>
+<circle cx="21.05" cy="44.78" r="0.876" fill="#1b6e1b"/>
+<circle cx="41.22" cy="21.05" r="0.876" fill="#1b6e1b"/>
+<circle cx="92.39" cy="57.02" r="0.876" fill="#1b6e1b"/>
+<circle cx="115.79" cy="74.34" r="0.876" fill="#1b6e1b"/>
+<circle cx="80.82" cy="100.53" r="0.876" fill="#1b6e1b"/>
+<text x="31.14" y="32.92" font-size="3.15" fill="#b00020" text-anchor="middle" dominant-baseline="middle">31.15 m</text>
+<text x="66.81" y="39.04" font-size="3.15" fill="#b00020" text-anchor="middle" dominant-baseline="middle">62.55 m</text>
+<text x="104.09" y="65.68" font-size="3.15" fill="#b00020" text-anchor="middle" dominant-baseline="middle">29.11 m</text>
+<text x="98.31" y="87.44" font-size="3.15" fill="#b00020" text-anchor="middle" dominant-baseline="middle">43.69 m</text>
+<text x="50.94" y="72.66" font-size="3.15" fill="#b00020" text-anchor="middle" dominant-baseline="middle">81.74 m</text>
+<text x="70.26" y="58.23" font-size="4.38" fill="#0d3b0d" text-anchor="middle" font-weight="bold">LOT 49</text>
+<text x="70.26" y="63.49" font-size="3.15" fill="#333" text-anchor="middle">3202.0 m² (32.02 sotix)</text>
+<line x1="126.31" y1="30.53" x2="126.31" y2="18.95" stroke="#333" stroke-width="0.547"/>
+<polygon points="126.31,17.21 124.23,20.34 128.40,20.34" fill="#333"/>
+<text x="126.31" y="14.89" font-size="3.15" fill="#333" text-anchor="middle">N</text>
+<line x1="12.63" y1="111.06" x2="32.63" y2="111.06" stroke="#333" stroke-width="0.766"/>
+<line x1="12.63" y1="109.80" x2="12.63" y2="112.32" stroke="#333" stroke-width="0.766"/>
+<line x1="32.63" y1="109.80" x2="32.63" y2="112.32" stroke="#333" stroke-width="0.766"/>
+<text x="12.63" y="109.17" font-size="3.15" fill="#333">20 m</text>
+</svg>

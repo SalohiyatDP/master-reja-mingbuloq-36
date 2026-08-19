@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 84.04 92.08" font-family="Arial, sans-serif">
+<rect x="0" y="0" width="84.04" height="92.08" fill="#ffffff"/>
+<polygon points="40.42,18.61 41.19,18.93 68.91,28.35 51.16,76.96 15.13,64.59 31.86,15.13 34.95,16.39 36.83,17.15" fill="#eaf4ea" stroke="#1b6e1b" stroke-width="0.368" stroke-linejoin="round"/>
+<circle cx="40.42" cy="18.61" r="0.589" fill="#1b6e1b"/>
+<circle cx="41.19" cy="18.93" r="0.589" fill="#1b6e1b"/>
+<circle cx="68.91" cy="28.35" r="0.589" fill="#1b6e1b"/>
+<circle cx="51.16" cy="76.96" r="0.589" fill="#1b6e1b"/>
+<circle cx="15.13" cy="64.59" r="0.589" fill="#1b6e1b"/>
+<circle cx="31.86" cy="15.13" r="0.589" fill="#1b6e1b"/>
+<circle cx="34.95" cy="16.39" r="0.589" fill="#1b6e1b"/>
+<circle cx="36.83" cy="17.15" r="0.589" fill="#1b6e1b"/>
+<text x="40.80" y="18.77" font-size="2.12" fill="#b00020" text-anchor="middle" dominant-baseline="middle">0.83 m</text>
+<text x="55.05" y="23.64" font-size="2.12" fill="#b00020" text-anchor="middle" dominant-baseline="middle">29.28 m</text>
+<text x="60.03" y="52.65" font-size="2.12" fill="#b00020" text-anchor="middle" dominant-baseline="middle">51.74 m</text>
+<text x="33.14" y="70.77" font-size="2.12" fill="#b00020" text-anchor="middle" dominant-baseline="middle">38.09 m</text>
+<text x="23.49" y="39.86" font-size="2.12" fill="#b00020" text-anchor="middle" dominant-baseline="middle">52.21 m</text>
+<text x="33.40" y="15.76" font-size="2.12" fill="#b00020" text-anchor="middle" dominant-baseline="middle">3.34 m</text>
+<text x="35.89" y="16.77" font-size="2.12" fill="#b00020" text-anchor="middle" dominant-baseline="middle">2.03 m</text>
+<text x="38.62" y="17.88" font-size="2.12" fill="#b00020" text-anchor="middle" dominant-baseline="middle">3.88 m</text>
+<text x="40.05" y="31.13" font-size="2.95" fill="#0d3b0d" text-anchor="middle" font-weight="bold">LOT 13</text>
+<text x="40.05" y="34.67" font-size="2.12" fill="#333" text-anchor="middle">2003.4 m² (20.03 sotix)</text>
+<line x1="76.47" y1="21.94" x2="76.47" y2="13.62" stroke="#333" stroke-width="0.368"/>
+<polygon points="76.47,12.37 74.97,14.61 77.97,14.61" fill="#333"/>
+<text x="76.47" y="10.70" font-size="2.12" fill="#333" text-anchor="middle">N</text>
+<line x1="9.08" y1="84.52" x2="29.08" y2="84.52" stroke="#333" stroke-width="0.516"/>
+<line x1="9.08" y1="83.67" x2="9.08" y2="85.37" stroke="#333" stroke-width="0.516"/>
+<line x1="29.08" y1="83.67" x2="29.08" y2="85.37" stroke="#333" stroke-width="0.516"/>
+<text x="9.08" y="83.25" font-size="2.12" fill="#333">20 m</text>
+</svg>

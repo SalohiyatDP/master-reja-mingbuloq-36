@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 93.48 110.83" font-family="Arial, sans-serif">
+<rect x="0" y="0" width="93.48" height="110.83" fill="#ffffff"/>
+<polygon points="30.54,93.10 17.61,93.22 34.82,17.61 75.87,38.92 64.93,92.78" fill="#eaf4ea" stroke="#1b6e1b" stroke-width="0.443" stroke-linejoin="round"/>
+<circle cx="30.54" cy="93.10" r="0.709" fill="#1b6e1b"/>
+<circle cx="17.61" cy="93.22" r="0.709" fill="#1b6e1b"/>
+<circle cx="34.82" cy="17.61" r="0.709" fill="#1b6e1b"/>
+<circle cx="75.87" cy="38.92" r="0.709" fill="#1b6e1b"/>
+<circle cx="64.93" cy="92.78" r="0.709" fill="#1b6e1b"/>
+<text x="24.07" y="93.16" font-size="2.55" fill="#b00020" text-anchor="middle" dominant-baseline="middle">12.93 m</text>
+<text x="26.22" y="55.41" font-size="2.55" fill="#b00020" text-anchor="middle" dominant-baseline="middle">77.54 m</text>
+<text x="55.35" y="28.27" font-size="2.55" fill="#b00020" text-anchor="middle" dominant-baseline="middle">46.25 m</text>
+<text x="70.40" y="65.85" font-size="2.55" fill="#b00020" text-anchor="middle" dominant-baseline="middle">54.96 m</text>
+<text x="47.73" y="92.94" font-size="2.55" fill="#b00020" text-anchor="middle" dominant-baseline="middle">34.39 m</text>
+<text x="44.75" y="66.06" font-size="3.55" fill="#0d3b0d" text-anchor="middle" font-weight="bold">LOT 2</text>
+<text x="44.75" y="70.32" font-size="2.55" fill="#333" text-anchor="middle">3007.1 m² (30.07 sotix)</text>
+<line x1="84.68" y1="25.53" x2="84.68" y2="15.85" stroke="#333" stroke-width="0.443"/>
+<polygon points="84.68,14.40 82.93,17.01 86.42,17.01" fill="#333"/>
+<text x="84.68" y="12.46" font-size="2.55" fill="#333" text-anchor="middle">N</text>
+<line x1="10.57" y1="102.02" x2="30.57" y2="102.02" stroke="#333" stroke-width="0.621"/>
+<line x1="10.57" y1="101.00" x2="10.57" y2="103.05" stroke="#333" stroke-width="0.621"/>
+<line x1="30.57" y1="101.00" x2="30.57" y2="103.05" stroke="#333" stroke-width="0.621"/>
+<text x="10.57" y="100.49" font-size="2.55" fill="#333">20 m</text>
+</svg>

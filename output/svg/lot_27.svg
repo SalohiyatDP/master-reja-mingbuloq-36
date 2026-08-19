@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 98.87 98.63" font-family="Arial, sans-serif">
+<rect x="0" y="0" width="98.87" height="98.63" fill="#ffffff"/>
+<polygon points="62.40,16.48 63.57,16.03 82.84,76.88 81.42,77.03 26.89,82.60 16.03,34.40" fill="#eaf4ea" stroke="#1b6e1b" stroke-width="0.395" stroke-linejoin="round"/>
+<circle cx="62.40" cy="16.48" r="0.633" fill="#1b6e1b"/>
+<circle cx="63.57" cy="16.03" r="0.633" fill="#1b6e1b"/>
+<circle cx="82.84" cy="76.88" r="0.633" fill="#1b6e1b"/>
+<circle cx="81.42" cy="77.03" r="0.633" fill="#1b6e1b"/>
+<circle cx="26.89" cy="82.60" r="0.633" fill="#1b6e1b"/>
+<circle cx="16.03" cy="34.40" r="0.633" fill="#1b6e1b"/>
+<text x="62.99" y="16.25" font-size="2.28" fill="#b00020" text-anchor="middle" dominant-baseline="middle">1.26 m</text>
+<text x="73.21" y="46.45" font-size="2.28" fill="#b00020" text-anchor="middle" dominant-baseline="middle">63.83 m</text>
+<text x="82.13" y="76.95" font-size="2.28" fill="#b00020" text-anchor="middle" dominant-baseline="middle">1.43 m</text>
+<text x="54.15" y="79.81" font-size="2.28" fill="#b00020" text-anchor="middle" dominant-baseline="middle">54.82 m</text>
+<text x="21.46" y="58.50" font-size="2.28" fill="#b00020" text-anchor="middle" dominant-baseline="middle">49.41 m</text>
+<text x="39.22" y="25.44" font-size="2.28" fill="#b00020" text-anchor="middle" dominant-baseline="middle">49.72 m</text>
+<text x="55.53" y="49.62" font-size="3.16" fill="#0d3b0d" text-anchor="middle" font-weight="bold">LOT 27</text>
+<text x="55.53" y="53.42" font-size="2.28" fill="#333" text-anchor="middle">3003.3 m² (30.03 sotix)</text>
+<line x1="90.86" y1="23.24" x2="90.86" y2="14.42" stroke="#333" stroke-width="0.395"/>
+<polygon points="90.86,13.10 89.27,15.48 92.44,15.48" fill="#333"/>
+<text x="90.86" y="11.34" font-size="2.28" fill="#333" text-anchor="middle">N</text>
+<line x1="9.62" y1="90.61" x2="29.62" y2="90.61" stroke="#333" stroke-width="0.554"/>
+<line x1="9.62" y1="89.70" x2="9.62" y2="91.53" stroke="#333" stroke-width="0.554"/>
+<line x1="29.62" y1="89.70" x2="29.62" y2="91.53" stroke="#333" stroke-width="0.554"/>
+<text x="9.62" y="89.25" font-size="2.28" fill="#333">20 m</text>
+</svg>
