@@ -48,20 +48,58 @@ LEGEND = [
     (11, "Daryo bo‘yida terasa"),
 ]
 
+import random as _random
+
 # normalized anchors: u across daryo-width (0..1), v from yo'l(0) -> daryo(1)
+# INVARIANTS (all variants): parking(1) at road (low v), toilet(2) small at an
+# edge corner, terrace(11) along the river (high v).
 ANCHORS = {
-    1: (0.16, 0.12),   # parking near road
-    2: (0.07, 0.88),   # toilet, edge
-    3: (0.22, 0.80),   # tapchan
-    4: (0.34, 0.62),   # pool
-    5: (0.64, 0.70),   # yurts
-    6: (0.50, 0.50),   # fire pit
-    7: (0.74, 0.44),   # summer kitchen
-    8: (0.62, 0.26),   # winter kitchen
-    9: (0.80, 0.18),   # basketball
-    10: (0.42, 0.30),  # green (large)
-    11: (0.50, 0.93),  # river terrace
+    1: (0.16, 0.12), 2: (0.07, 0.88), 3: (0.22, 0.80), 4: (0.34, 0.62),
+    5: (0.64, 0.70), 6: (0.50, 0.50), 7: (0.74, 0.44), 8: (0.62, 0.26),
+    9: (0.80, 0.18), 10: (0.42, 0.30), 11: (0.50, 0.93),
 }
+
+# Four distinct layout variants so the 62 plans are not identical.
+VARIANTS = {
+    "A": {1: (0.16, 0.11), 2: (0.92, 0.10), 3: (0.24, 0.80), 4: (0.36, 0.62),
+          5: (0.66, 0.70), 6: (0.50, 0.50), 7: (0.74, 0.42), 8: (0.60, 0.26),
+          9: (0.82, 0.16), 10: (0.42, 0.32), 11: (0.50, 0.93)},
+    "B": {1: (0.82, 0.11), 2: (0.08, 0.12), 3: (0.74, 0.80), 4: (0.62, 0.60),
+          5: (0.32, 0.70), 6: (0.50, 0.46), 7: (0.26, 0.42), 8: (0.40, 0.24),
+          9: (0.18, 0.16), 10: (0.60, 0.34), 11: (0.50, 0.92)},
+    "C": {1: (0.50, 0.10), 2: (0.92, 0.14), 3: (0.18, 0.56), 4: (0.50, 0.56),
+          5: (0.70, 0.80), 6: (0.30, 0.72), 7: (0.76, 0.36), 8: (0.24, 0.30),
+          9: (0.50, 0.22), 10: (0.58, 0.42), 11: (0.50, 0.93)},
+    "D": {1: (0.78, 0.11), 2: (0.08, 0.16), 3: (0.30, 0.82), 4: (0.68, 0.66),
+          5: (0.44, 0.74), 6: (0.58, 0.48), 7: (0.30, 0.40), 8: (0.72, 0.30),
+          9: (0.20, 0.20), 10: (0.48, 0.34), 11: (0.50, 0.93)},
+}
+
+
+def _clamp(x, lo, hi):
+    return max(lo, min(hi, x))
+
+
+def get_anchors(lot_no):
+    """Return a per-lot anchor layout: a variant + small deterministic jitter
+    so no two lots are identical, while keeping the invariants."""
+    base = VARIANTS["ABCD"[(lot_no - 1) % 4]]
+    _random.seed(lot_no * 7 + 3)
+    out = {}
+    for k, (u, v) in base.items():
+        ju = _random.uniform(-0.05, 0.05)
+        jv = _random.uniform(-0.04, 0.04)
+        if k == 1:      # parking: stay near road (bottom)
+            v = _clamp(v + jv * 0.5, 0.07, 0.16)
+        elif k == 11:   # terrace: stay on river (top)
+            v = _clamp(v + jv * 0.4, 0.90, 0.95)
+        elif k == 2:    # toilet: stay at a low edge corner
+            u = _clamp(u + ju * 0.3, 0.05, 0.95)
+            v = _clamp(v + jv * 0.3, 0.08, 0.20)
+            out[k] = (u, v)
+            continue
+        out[k] = (_clamp(u + ju, 0.06, 0.94), _clamp(v + jv, 0.05, 0.95))
+    return out
 
 
 # ------------------------------------------------------------ orientation
@@ -189,17 +227,20 @@ def build_sheet(lot_no):
         if edge < 0.16 or random.random() < 0.25:
             P.append(tree(px, py, random.uniform(4, 9)))
 
+    A = get_anchors(lot_no)
+    ring_screen = list(zip(xs, ys))
+    centroid_screen = (cx, cy)
+
     def anchor(i):
-        u, v = ANCHORS[i]
+        u, v = A[i]
         p = uv(u, v)
-        # keep inside
-        mp = ((minx + maxx) / 2, (miny + maxy) / 2)
-        # rough inside check in screen space vs polygon
+        if not point_in_polygon(p, ring_screen):
+            p = snap_inside(p, ring_screen, centroid_screen)
         return p
 
     # paths: smooth beige links from a central spine
     spine = anchor(6)
-    for i in ANCHORS:
+    for i in A:
         px, py = anchor(i)
         P.append('<path d="M%.1f,%.1f Q%.1f,%.1f %.1f,%.1f" stroke="#b9a06a" '
                  'stroke-width="4.5" fill="none" opacity=".55" '
@@ -284,7 +325,7 @@ def build_sheet(lot_no):
     P.append('</g>')  # end clip
 
     # number badges
-    for i in ANCHORS:
+    for i in A:
         px, py = anchor(i)
         P.append('<circle cx="%.1f" cy="%.1f" r="11" fill="#14241c" '
                  'stroke="%s" stroke-width="1.5"/>' % (px, py, GOLD))

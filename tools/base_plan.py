@@ -14,8 +14,8 @@ import os
 import sys
 import math
 import random
-from master_plan import load_lot_metres
-from sheet import ANCHORS, LEGEND
+from master_plan import load_lot_metres, point_in_polygon, snap_inside
+from sheet import ANCHORS, LEGEND, get_anchors
 import orientation
 import geo
 
@@ -62,6 +62,7 @@ def draw(lot_no, annotated):
     area = geo.shoelace_area(ring)
     perim = geo.perimeter(ring, closed=True)
     n = len(ring)
+    ANCHORS = get_anchors(lot_no)   # per-lot layout variant (shadows import)
     f, sc, cw, ch, _ = canvas_transform(ring)
 
     xs = [f(*p)[0] for p in ring]
@@ -74,6 +75,17 @@ def draw(lot_no, annotated):
 
     def uv(u, v):
         return (minx + bw * u, maxy - bh * v)
+
+    # snap every anchor inside the exact polygon so no object/badge spills out
+    ring_screen = list(zip(xs, ys))
+    _cs = (cxp, cyp)
+    _snapped = {}
+    for _i, (_u, _v) in ANCHORS.items():
+        _p = uv(_u, _v)
+        if not point_in_polygon(_p, ring_screen):
+            _p = snap_inside(_p, ring_screen, _cs)
+        _snapped[_i] = ((_p[0] - minx) / bw, (maxy - _p[1]) / bh)
+    ANCHORS = _snapped
 
     poly = " ".join("%.1f,%.1f" % (x, y) for x, y in zip(xs, ys))
     P = []
