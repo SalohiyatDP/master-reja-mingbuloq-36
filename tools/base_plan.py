@@ -15,7 +15,8 @@ import sys
 import math
 import random
 from master_plan import load_lot_metres
-from sheet import orient_daryo_up, ANCHORS, LEGEND
+from sheet import ANCHORS, LEGEND
+import orientation
 import geo
 
 HERE = os.path.dirname(__file__)
@@ -57,10 +58,9 @@ def canvas_transform(ring, target_w=1200, margin=140):
 
 
 def draw(lot_no, annotated):
-    ring0 = load_lot_metres(lot_no)
-    area = geo.shoelace_area(ring0)
-    perim = geo.perimeter(ring0, closed=True)
-    ring, _ = orient_daryo_up(ring0)
+    ring, _river_idx, _road_idx = orientation.oriented_lot(lot_no)
+    area = geo.shoelace_area(ring)
+    perim = geo.perimeter(ring, closed=True)
     n = len(ring)
     f, sc, cw, ch, _ = canvas_transform(ring)
 

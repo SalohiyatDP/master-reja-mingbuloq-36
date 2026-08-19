@@ -16,6 +16,7 @@ import math
 from shp_reader import read_shp
 import geo
 from master_plan import load_lot_metres, point_in_polygon, snap_inside
+import orientation
 
 HERE = os.path.dirname(__file__)
 OUT = os.path.join(HERE, "..", "output", "master_plans")
@@ -133,10 +134,9 @@ def tree(cx, cy, r):
 # ------------------------------------------------------------ main render
 
 def build_sheet(lot_no):
-    ring0 = load_lot_metres(lot_no)
-    area = geo.shoelace_area(ring0)
-    perim = geo.perimeter(ring0, closed=True)
-    ring, order = orient_daryo_up(ring0)
+    ring, river_idx, road_idx = orientation.oriented_lot(lot_no)
+    area = geo.shoelace_area(ring)
+    perim = geo.perimeter(ring, closed=True)
     n = len(ring)
 
     # side lengths (oriented order): edge0 = top(daryo), last = bottom-ish
@@ -361,13 +361,14 @@ def build_sheet(lot_no):
     P.append('<text x="%d" y="%d" font-size="15" fill="%s" font-weight="800">'
              'O‘LCHAMLAR (m)</text>' % (rx + 20, yy + 6, GOLD))
     yy += 30
-    dim_names = ["Yuqori (daryo)", "O‘ng tomon", "Pastki (yo‘l)", "Chap tomon"]
-    for k in range(n):
-        nm = dim_names[k] if k < len(dim_names) else "Tomon %d" % (k + 1)
+    dim_rows = [("🌊 Daryo bo‘yi", sides[river_idx]),
+                ("🚗 Yo‘l bo‘yi", sides[road_idx]),
+                ("Maydoni (ga)", area / 10000)]
+    for (nm, val) in dim_rows:
         P.append('<text x="%d" y="%d" font-size="13" fill="%s">%s</text>'
                  '<text x="%d" y="%d" font-size="13" fill="%s" '
                  'text-anchor="end" font-weight="700">%.2f</text>'
-                 % (rx + 20, yy, MUTE, nm, rx + 280, yy, TEXT, sides[k]))
+                 % (rx + 20, yy, MUTE, nm, rx + 280, yy, TEXT, val))
         yy += 22
     P.append('<text x="%d" y="%d" font-size="13" fill="%s">Perimetr</text>'
              '<text x="%d" y="%d" font-size="13" fill="%s" text-anchor="end" '
